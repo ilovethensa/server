@@ -21,5 +21,7 @@ modules:
   - type: systemd
     enabled:
       - sshd.service
+      - docker.service
+      - docker.socket
 
   - type: signing
