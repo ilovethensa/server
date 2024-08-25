@@ -26,5 +26,10 @@ modules:
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       # - firefox
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+  - type: systemd
+# this example disables automatic flatpak updates and enables a custom service unit for all users
+system:
+    enabled:
+      - sshd.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
